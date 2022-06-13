@@ -177,3 +177,8 @@ Quando o comando
 make clean
 ```
 é executado, todos os arquivos objetos são excluídos da pasta. O comando existe para que os arquivos sejam atualizados ao executar o comando **make**.
+
+
+**Modificação da placa STM32F411 para a STM32f401**
+
+A modificação feita no dia 13/06 foi realizada pois antes eu não tinha uma placa para testar o código, portanto a atividade estava sendo realizada a partir da placa que os professores utilizavam. Foram realizadas poucas modificações no código, apenas o tamanho da memória e a remoção de um dos vetores de interrupção.
