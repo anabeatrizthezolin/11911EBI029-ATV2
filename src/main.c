@@ -5,7 +5,7 @@
 #define STM32_RCC_BASE      0x40023800      // 0x40023800-0x40023bff: Resetand Clock control RCC 
 
 // AHB2 Enderecos base *****************************************************
-#define STM32_GPIOC_BASE    0x48000800     // 0x48000800-0x48000bff: GPIO PORT C
+#define STM32_GPIOC_BASE    0x40020800     // 0x48000800-0x48000bff: GPIO PORT C
 #define STM32_GPIOA_BASE    0x40020000     // 0x40020000-0x400203FF: GPIO PORT A
 
 // Registro Offsets ********************************************************

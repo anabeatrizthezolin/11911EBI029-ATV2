@@ -1,8 +1,8 @@
 #include <stdint.h>
 
 #define SRAM_START  0x20000000U                     // Endereço de início da SRAM CORTEX-M
-#define SRAM_SIZE   (128U * 1024U)                  // Tamanho da SRAM STM32F411 128K 
-#define SRAM_END    ((SRAM_START) + (SRAM_SIZE))    // Endereço final da SRAM STM32F411 
+#define SRAM_SIZE   (64U * 1024U)                   // Tamanho da SRAM STM32F401 64K 
+#define SRAM_END    ((SRAM_START) + (SRAM_SIZE))    // Endereço final da SRAM STM32F401 
 #define STACK_START SRAM_END                        // Inicio da Stack no final da memória SRAM
 
 int main(void);
@@ -189,7 +189,7 @@ uint32_t vectors[] __attribute__((section(".isr_vectors"))) = // Reserva os 408 
     0,                                      // 0x0000 0188 
     0,                                      // 0x0000 018C 
     (uint32_t)spi4_irqhandler,              // 0x0000 0190 
-    (uint32_t)spi5_irqhandler,              // 0x0000 0194 
+    //(uint32_t)spi5_irqhandler,            // 0x0000 0194 somente no 411
 };
 
 void reset_handler(void){
